@@ -1,127 +1,124 @@
-*{
-    margin: 0;padding: 0;
+* {
+    margin: 0;
+    padding: 0;
     background-color: transparent;
-    color:rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
-html,body{
-    width: 100%;height: 100%;
+
+html, body {
+    width: 100%;
+    height: 100%;
 }
-a{
+
+a {
     -webkit-app-region: no-drag;
-    outline:none;
+    outline: none;
     text-decoration: none;
 }
+
 /*loading.html*/
-.loadingShow{
+.loadingShow {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
-.loadingImage{
-position: relative;left:-150px;
+
+.loadingImage {
+    position: relative;
+    left: -150px;
 }
-.loadingFloat{
+
+.loadingFloat {
     position: absolute;
-    width: 400px;
-    right: 100px;top:0;
+    width: 300px;
+    right: 200px;
+    top: 100px;
     height: 100%;
+    text-align: center;
 }
-.lfTitle{
+
+.lfTitle {
     margin-top: 30px;
-    font-size: 60px;
+    font-size: 30px;
     text-align: center;
     color: #efefef;
     font-weight: bold;
     font-family: "YouYuan";
-    letter-spacing:10px;
+    letter-spacing: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .titlebar {
     -webkit-user-select: none;
 }
-.titlebarSelect{
+
+.titlebarSelect {
     -webkit-user-select: text;
 }
-.mainBody{
+
+.mainBody {
     position: relative;
-    width: 100%;height: 100%;background: rgba(0,0,0,0);position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    position: relative;
     overflow: hidden;
 }
-.centerMainBox{
-    width: 100%;height: 100%;
+
+.centerMainBox {
+    width: 100%;
+    height: 100%;
 }
-.leftHiddenBox{
+
+.leftHiddenBox {
 
 }
-.rightHiddenBox{
+
+.rightHiddenBox {
 
 }
-.title{
+
+.title {
     height: 10%;
 }
-.title h1{
+
+.title h1 {
     line-height: 100%;
 }
-.titleHeader{
+
+.titleHeader {
     height: 10%;
 }
-.mainTextarea{
+
+.mainTextarea {
     width: 100%;
-    border:none;
-    background: rgba(255,255,255,0);
-    color:#fff;
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
     height: 80%;
     font-size: 18px;
     font-family: Arial;
-    letter-spacing:5px;/*字符间距*/
+    letter-spacing: 5px; /*字符间距*/
     outline: none;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 
 }
-.layerOutOver{
-    position: absolute;display: none;
-    top:0;left: 0;bottom:0;right: 0;
+
+.layerOutOver {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
-.layerOutCenter{
-    position: absolute;display: none;
-    top:50%;left: 50%;height: 0;width: 0;
+
+.layerOutCenter {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    height: 0;
+    width: 0;
 
 }
