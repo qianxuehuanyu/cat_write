@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron . ",
-    "packager": "electron-packager ./ cat_write --platform=win32 --arch=ia32 --out ./outApp --electron-version 1.6.2 --overwrite --icon=./images/favicon.ico"
+    "packager": "electron-packager ./ cat_write --platform=win32 --arch=ia32 --out ./outApp --electron-version 1.6.2 --overwrite --icon=./images/favicon.ico",
+    "packager64": "electron-packager ./ cat_write --platform=win32 --arch=x64 --out ./outApp --electron-version 1.6.2 --overwrite --icon=./images/favicon.ico"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [

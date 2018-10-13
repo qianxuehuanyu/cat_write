@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>千雪幻宇</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <link rel="stylesheet" href="../css/layerOut.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="mainBody">
+      <div class="leftHiddenBox"></div>
+      <div class="centerMainBox">
+
+        <div class="title">
+          <h1>Hello World!</h1>
+        </div>
+        <textarea id="writeBox" class="mainTextarea" wrap="hard" autofocus ></textarea>
+        <a href="login.html" target="_parent">登录</a>
+        </div>
+
+        <div class="layerOutOver"></div>
+        <div class="layerOutCenter"></div>
+
+      <div class="rightHiddenBox"></div>
+    </div>
+
+  </body>
+
+  <script>
+    // You can also require other 3+files to run in this process
+    require('./../renderer.js');
+    require('./../src/leftHiddenBoxJS.js');
+    require('./../src/centerMainBoxJs.js');
+    require('./../src/rightHiddenBoxJS.js');
+  </script>
+</html>

@@ -1,0 +1,539 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+body {
+    font-size: 14px;
+    color: #666;
+    background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+input, textarea, button {
+    outline: none !important;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block
+}
+
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+audio:not([controls]) {
+    display: none
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    outline: 0
+}
+
+sub, sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+img {
+    width: auto \9;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic
+}
+
+button, input, select, textarea {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: middle
+}
+
+button, input {
+    *overflow: visible;
+    line-height: normal
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button
+}
+
+label, select, button, input[type="button"], input[type="reset"], input[type="submit"], input[type="radio"], input[type="checkbox"] {
+    cursor: pointer
+}
+
+input[type="search"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield
+}
+
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top
+}
+
+sub, sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+img {
+    width: auto \9;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic
+}
+
+button, input, select, textarea {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: middle
+}
+
+button, input {
+    *overflow: visible;
+    line-height: normal
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button
+}
+
+label, select, button, input[type="button"], input[type="reset"], input[type="submit"], input[type="radio"], input[type="checkbox"] {
+    cursor: pointer
+}
+
+input[type="search"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield
+}
+
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top
+}
+
+/*---------------------------------*/
+
+body {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+div {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu {
+    z-index: 100;
+    width: 150px;
+    background-color: white;
+    visibility: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 10px #D1CEBC
+}
+
+.menu-item {
+    background-color: #fff;
+    margin: 0;
+}
+
+.menu-item-btn {
+    width: 100%;
+    border: 0;
+    padding: 5px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+}
+
+.menu-item-btn:hover {
+    background-color: #D1CEBC;
+}
+
+.displayNone {
+    display: none !important;
+}
+
+.body {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.flexBox {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.flexBox .showBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 70%;
+    max-width: 256px;
+    padding: 20px 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexBox .showBox input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dedede;
+    outline: none;
+    background: #fff;
+    padding: 0 6px;
+}
+
+.flexBox .showBox button {
+    outline: none;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+.addClassBox .showBox {
+    background: rgba(162, 233, 255, 1);
+}
+
+.addClassBox .showBox button {
+    background: #18beff;
+    border: 1px solid #4d8dff
+}
+
+.addStudentBox .showBox {
+    background: rgba(255, 241, 136, 1);
+}
+
+.addStudentBox .showBox button {
+    background: #ffb355;
+    border: 1px solid #ff6b0e
+}
+
+.addDateBox .showBox {
+    background: rgba(255, 162, 204, 1);
+}
+
+.addDateBox .showBox button {
+    background: #ec6f94;
+    border: 1px solid #ff2b78
+}
+
+.input {
+    margin-bottom: 10px;
+    word-break: break-all;
+    color: #333;
+}
+
+.list {
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.list-header {
+    color: #333;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+.in_list_ul {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.in_list_ul::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.in_list_ul::-webkit-scrollbar-button {
+    display: none;
+    background-color: #FF7677;
+}
+
+.in_list_ul::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+}
+
+.in_list_ul::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #ddd;
+}
+
+.in_list_ul::-webkit-scrollbar-corner {
+    background: #82AFFF;
+}
+
+.classList {
+    width: 15%;
+    background: rgba(162, 233, 255, 0.5);
+}
+
+.studentList {
+    width: 15%;
+    background: rgba(255, 241, 136, 0.5);
+}
+
+.dateList {
+    width: 15%;
+    background: rgba(255, 162, 204, 0.5);
+}
+
+.list.BlackBoxList {
+    flex: 1;
+    margin-right: 0;
+    background: #fff !important;
+    flex-direction: row;
+    border-radius: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.theClass {
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.theClass.chooseClass {
+    color: #4d8dff;
+}
+
+.theClass:hover {
+    color: #4d8dff;
+    white-space: normal;
+    word-break: break-all;
+    text-decoration: underline;
+}
+
+.theStudent {
+    color: #ff7f2e;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.theStudent.nochooseStudent {
+    color: #cbcbcb;
+}
+
+.theStudent:hover {
+    white-space: normal;
+    word-break: break-all;
+    text-decoration: underline;
+}
+
+.theStudent.nochooseStudent:hover {
+    color: #ff7f2e;
+}
+
+.theDate {
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.theDate.chooseDate {
+    color: #ff62aa;
+}
+
+.theDate:hover {
+    color: #ff62aa;
+    white-space: normal;
+    word-break: break-all;
+    text-decoration: underline;
+}
+
+.lineDiv {
+    height: 1px;
+    background: #666666;
+    margin: 1px 0;
+}
+
+.theDiv {
+    width: 180px;
+    height: 53px;
+    padding: 5px 20px;
+    border-radius: 26px;
+    border: 1px solid #efefef;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.backImg {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+}
+
+.theDivDiv {
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-right: 1px dashed #666666;
+    border-left: 1px dashed #666666;
+}
+
+.theDivClick {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.theDivClick i {
+    opacity: 0.33;
+    font-size: 20px;
+}
+
+.fullDiv1 .theDivClick .i1 {
+    opacity: 1;
+}
+
+.fullDiv2 .theDivClick .i1 {
+    opacity: 1;
+}
+
+.fullDiv2 .theDivClick .i2 {
+    opacity: 1;
+}
+
+.fullDiv3 .theDivClick .i1 {
+    opacity: 1;
+}
+
+.fullDiv3 .theDivClick .i2 {
+    opacity: 1;
+}
+
+.fullDiv3 .theDivClick .i3 {
+    opacity: 1;
+}
+
+.fullDiv4 .theDivClick .i1 {
+    opacity: 1;
+}
+
+.fullDiv4 .theDivClick .i2 {
+    opacity: 1;
+}
+
+.fullDiv4 .theDivClick .i3 {
+    opacity: 1;
+}
+
+.fullDiv4 .theDivClick .i4 {
+    opacity: 1;
+}
+
+.fullDiv5 .theDivClick i {
+    opacity: 1;
+}
+
+.fullDiv5 .backImg {
+    opacity: 1;
+}
+
+.theDivName {
+    text-align: center;
+    height: 20px;
+    color: #333;
+}
+
+.theDivClick {
+    height: 20px;
+}

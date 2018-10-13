@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>千雪幻宇</title>
+    <link rel="stylesheet" href="./style.css" type="text/css"/>
+    <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="body">
+
+    <div class="classList list">
+        <p class="list-header">班级/Class</p>
+        <div class="in_list_ul">
+            <ul id="Ul_class"></ul>
+        </div>
+        <button class="addBtn" onclick="addNewClass()">+添加/Add</button>
+    </div>
+
+    <div class="flexBox addClassBox">
+        <div class="showBox">
+            <div class="input">
+                请输入名称/Please input the name
+            </div>
+            <div class="input">
+                <input id="className" type="text" required="required" onchange="changeClassNameValue(this)">
+            </div>
+            <div>
+                <button style="border-style: solid" onclick="addClassCheck()">确认/Submit</button>
+                <button style="border-style: dotted;float: right;" onclick="addClassCancel()">取消/Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="studentList list">
+        <p class="list-header">学生/Student</p>
+        <ul id="Student_class" class="in_list_ul"></ul>
+        <button id="Student_add_btn" class="addBtn" disabled="disabled" onclick="addNewStudent()">+添加/Add</button>
+    </div>
+
+    <div class="flexBox addStudentBox">
+        <div class="showBox">
+            <div class="input">
+                请输入学生姓名/Please input the student's name
+            </div>
+            <div class="input">
+                <input id="studentName" type="text" required="required" onchange="changeStudentNameValue(this)">
+            </div>
+            <div>
+                <button style="border-style: solid" onclick="addStudentCheck()">确认/Submit</button>
+                <button style="border-style: dotted;float: right;" onclick="addStudentCancel()">取消/Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dateList list">
+        <p class="list-header">日期/Date</p>
+        <ul id="Class_Student_Date" class="in_list_ul">
+        </ul>
+        <button id="Class_Student_Date_add_btn" class="addBtn" disabled="disabled" onclick="addNewDate()">+添加/Add
+        </button>
+    </div>
+    <div class="flexBox addDateBox">
+        <div class="showBox">
+            <div class="input">
+                请输入日期/Please input the date
+            </div>
+            <div class="input">
+                <input id="dateInputValue" type="date" required="required" onchange="changeDateValue(this)">
+            </div>
+            <div class="input">
+                请输入命名/Please input the name
+            </div>
+            <div class="input">
+                <input id="dateInputName" type="text" required="required" onchange="changeDateName(this)">
+            </div>
+            <div>
+                <button style="border-style: solid" onclick="addDateCheck()">确认/Submit</button>
+                <button style="border-style: dotted;float: right;" onclick="addDateCancel()">取消/Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="list BlackBoxList" id="BlackBoxList">
+
+    </div>
+</div>
+
+<div id="menu-friend" class="menu">
+    <div class="menu-item">
+        <button class="menu-item-btn" id="btn1" onclick="deleteAny()">删除/Delete</button>
+    </div>
+</div>
+</body>
+<script>
+    // You can also require other 3+files to run in this process
+    require('./renderer.js');
+</script>
+</html>
