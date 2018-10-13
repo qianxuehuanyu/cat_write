@@ -74,7 +74,7 @@ function createWindow() {
                 loadLogo.close();
 
                 //Open the DevTools.
-                mainWindow.webContents.openDevTools();
+                // mainWindow.webContents.openDevTools();
 
                 mainWindow.once('ready-to-show', () => {
                     mainWindow.show()
@@ -136,7 +136,12 @@ ipcMain.on('asynchronous-message', (event, arg) => {
     if (arg === 1) {
         fs.readFile("ini.json", function (err, data) {
             if (!err) {
-                event.sender.send('asynchronous-reply', data)
+                if (data.toJSON().data.length === 0) {
+                    event.sender.send('asynchronous-reply', 0)
+
+                } else {
+                    event.sender.send('asynchronous-reply', data)
+                }
             }
         });
     } else {

@@ -61,7 +61,7 @@ ipcRenderer.on('asynchronous-reply', (event, arg) => {
     if (arg === 'pong') {
         console.log('pong====', arg) // prints "pong"
     } else {
-        if (arg) {
+        if (arg && arg !== 0) {
             DATA = JSON.parse(arg);
             refreshCLASSLIST();
         }

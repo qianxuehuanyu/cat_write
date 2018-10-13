@@ -4,7 +4,8 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron . "
+    "start": "electron . ",
+    "packager": "electron-packager ./ cat_write --platform=win32 --arch=ia32 --out ./outApp --electron-version 1.6.2 --overwrite --icon=./images/favicon.ico"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,7 +18,9 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "~1.6.2"
+    "electron": "~1.6.2",
+    "electron-packager": "^12.2.0",
+    "electron-winstaller": "^2.7.0"
   },
   "dependencies": {
     "md5-js": "^0.0.3",
